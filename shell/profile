@@ -1,0 +1,12 @@
+# This is sourced by fish the second time, so should be idempotent.
+# Adds paths from ~/my/system/paths to PATH if they are not already added.
+for path in ~/my/system/paths/*; do
+	case ":$PATH:" in
+		*:"$path":*)
+			# The path has been already added.
+		;;
+		*)
+			PATH=$PATH:$path
+		;;
+	esac
+done

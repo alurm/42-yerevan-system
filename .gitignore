@@ -1,0 +1,14 @@
+# https://github.com/noamraph/nixsa/releases
+/nix/nixsa
+
+# https://github.com/alurm/lsbig
+/paths/lsbig
+
+# https://github.com/oh-my-fish/plugin-foreign-env
+/shell/fish/plugin-foreign-env
+
+# Vim.
+*.swp
+
+# Nix.
+result
