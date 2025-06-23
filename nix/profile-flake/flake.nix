@@ -12,10 +12,14 @@
         brave
         alejandra
         helix
-        jujutsu
         direnv
         fish
         nix-direnv
+        rlwrap
+        nixd
+        atool
+        git
+        # jujutsu # Using a fork instead at the moment.
       ];
     };
   });

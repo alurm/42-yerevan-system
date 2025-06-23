@@ -1,5 +1,0 @@
-theme = "vim_dark_high_contrast"
-[editor.cursor-shape]
-normal = "bar"
-insert = "bar"
-select = "bar"

@@ -7,6 +7,7 @@ if status is-login
 
     # To make nix shell launch fish.
     set --export SHELL (which fish)
+    set --export EDITOR hx
 
     # ~ is filled with crap anyway.
     if [ (pwd) = ~ ]
