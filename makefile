@@ -1,14 +1,14 @@
 # GNU stow could be used but it isn't.
 # One reason is that it's unclear how to create links which go through $(HOME)/my with it.
 
-.DEFAULT_GOAL := link
+.DEFAULT_GOAL := all
 SHELL := /bin/bash
 
 # Defines $(files) and targets for them.
 include data.mk
 
-$(files):
-	ln --symbolic $^ $@
+.PHONY: all
+all: link $(sources)
 
 .PHONY: link
 link: dirs $(files)
@@ -20,3 +20,6 @@ dirs:
 .PHONY: unlink
 unlink:
 	rm -f $(files)
+
+$(files):
+	ln --symbolic $^ $@

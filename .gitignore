@@ -1,14 +1,18 @@
-# https://github.com/noamraph/nixsa/releases
-/nix/nixsa
+# Sources
 
-# https://github.com/alurm/lsbig
+/shell/fish/plugin-foreign-env
+/nix/nixsa
 /paths/lsbig
 
-# https://github.com/oh-my-fish/plugin-foreign-env
-/shell/fish/plugin-foreign-env
+# Caches
 
-# Vim.
+/caches/cargo/*
+!/caches/cargo/.gitignore
+
+# Vim
+
 *.swp
 
-# Nix.
+# Nix
+
 result
