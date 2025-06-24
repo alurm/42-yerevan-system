@@ -11,6 +11,7 @@ files = $(addprefix $(HOME)/, \
 		fish/config.fish \
 		jj/config.toml \
 		direnv/direnvrc \
+		nix/nix.conf \
 	) \
 ) \
 
@@ -20,6 +21,7 @@ $(HOME)/.config/fish/config.fish: $(HOME)/my/system/shell/fish/config.fish
 $(HOME)/.config/git/config: $(HOME)/my/system/git/config
 $(HOME)/.config/jj/config.toml: $(HOME)/my/system/git/jj-config.toml
 $(HOME)/.config/direnv/direnvrc: $(HOME)/my/system/nix/nix-direnv/direnvrc
+$(HOME)/.config/nix/nix.conf: $(HOME)/my/system/nix/nix.conf
 
 # Caches
 
